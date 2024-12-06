@@ -1,0 +1,53 @@
+/* Reset general de márgenes, padding y bordes */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset de tipografía */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, dl, dd {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Reset de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset de botones */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Imágenes responsivas */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset de tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Ajuste de los campos de formulario */
+input, textarea, select {
+  font: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');

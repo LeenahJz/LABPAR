@@ -1,0 +1,44 @@
+[
+    {
+        "nombres": "Pamela Margoth",
+        "apellidos": "Chávez Barrientos",
+        "experiencia": 19,
+        "universidad": "Universidad de Chile",
+        "especialidad": "Geriatría"
+    },
+    {
+        "nombres": "María Carolina",
+        "apellidos": "Salisbury Devincenzi",
+        "experiencia": 12,
+        "universidad": "Universidad De La República",
+        "especialidad": "Cirugía General"
+    },
+    {
+        "nombres": "Philipp",
+        "apellidos": "Anwandter Beckhaus",
+        "experiencia": 16,
+        "universidad": "Pontificia Universidad Católica de Chile",
+        "especialidad": "Traumatología y Ortopedia"
+    },
+    {
+        "nombres": "Javiera",
+        "apellidos": "Pérez Velásquez",
+        "experiencia": 5,
+        "universidad": "Universidad de los Andes",
+        "especialidad": "Pediatría General"
+    },
+    {
+        "nombres": "Marcelo",
+        "apellidos": "Sarzosa Enríquez",
+        "experiencia": 25,
+        "universidad": "Universidad de Concepción",
+        "especialidad": "Cirugía Maxilofacial"
+    },
+    {
+        "nombres": "Carmen",
+        "apellidos": "Icarte Barrientos",
+        "experiencia": 23,
+        "universidad": "Universidad de Concepción",
+        "especialidad": "Fisiatría Pediátrico"
+    }
+]

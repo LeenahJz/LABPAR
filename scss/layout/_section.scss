@@ -1,0 +1,233 @@
+// metodologia sass en section.scss
+
+@import '../abstracts/_variables.scss';
+
+body {
+    font-family: $font-text;
+    font-size: 1.9rem;
+    background-color: $background-color;
+    color: $text-color;
+
+    .light-mode {
+        background-color: #ffffff;
+        color: #000;
+    }
+}
+
+
+section.view {
+    padding: 2rem;
+    background-color: $secondary-color;
+
+    h2 {
+        @include text-style(#14416b, 1.5rem, 'Ropa Sans' sans-serif, bold, italic);
+
+    }
+
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: $padding;
+
+
+        @include text-style(#14416b, 1.3rem, 'Ropa Sans' sans-serif, bold, italic);
+
+        & {
+            @media (max-width: $breakpoint-md) {
+                display: block;
+
+                .cards_item {
+                    display: block;
+                    width: 60%;
+                }
+            }
+        }
+
+        &__item {
+            display: inline-block;
+            background-color: $card-background;
+            margin: 5px;
+            width: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(11, 60, 144, 0.744);
+            font-family: $font-text;
+            color: #14416b;
+            font-size: 1.2rem;
+
+            h2 {
+                @include text-style(#14416b, 1.7rem, 'Ropa Sans' sans-serif, bold, italic);
+
+            }
+
+            p {
+                @include text-style(#1f5886, 1.4rem, 'Ropa Sans' sans-serif, normal, italic);
+                border-radius: 5px;
+                background: $card-background;
+            }
+
+            pre {
+                background-color: $card-background;
+                padding: 10px;
+                border: 1px solid #4f3511;
+                border-radius: 5px;
+                overflow-x: auto;
+                margin-top: 10px;
+                @include text-style(#14416b, 1.3rem, 'Ropa Sans' sans-serif, normal, italic);
+
+            }
+
+        }
+
+        &__title {
+            @include text-style(#14416b, 1.4rem, 'Ropa Sans' sans-serif, bold, italic);
+
+        }
+
+        &__description {
+            display: flex;
+            background-color: $card-background;
+            margin: 5px;
+            width: auto;
+            border-radius: 5px;
+            align-items: center;
+            @include text-style(#1f5886, 1.0rem, 'Ropa Sans' sans-serif, bold, normal);
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: $padding;
+
+                label {
+                    display: block;
+                    font-size: 1.1rem;
+                    font-family: $font-text;
+                    color: $primary-color;
+                    padding: $padding;
+                }
+
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: $padding;
+                    margin: $margin;
+                    border: 1px solid $primary-color;
+                    border-radius: 5px;
+                    font-size: 1.1rem;
+                    font-family: $font-text;
+                    font-weight: bold;
+                    color: $primary-color;
+                    background-color: $card-background;
+                    text-align: center;
+                    box-shadow: 0 2px 5px rgba(11, 60, 144, 0.744);
+                }
+
+            }
+        }
+
+        &__image {
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-items: center;
+            border-radius: 20%;
+            border: 2px solid;
+            border-color: $image-border-color;
+
+            @media (max-width: $breakpoint-md) {
+                display: block;
+                flex-wrap: wrap;
+                width: auto;
+                margin: 10px auto;
+                justify-content: center;
+            }
+        }
+
+        &__image-container {
+            width: 100%;
+            border-radius: 20px;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-top: 10px;
+            justify-items: center;
+
+            @media (max-width: $breakpoint-md) {
+                display: block;
+                flex-wrap: wrap;
+                width: auto;
+                margin: 10px auto;
+                justify-content: center;
+            }
+
+        }
+
+        &__name {
+            @include text-style(#14416b, 1.5rem, 'Ropa Sans' sans-serif, bold, normal);
+        }
+
+        &__text {
+            @include text-style(#14416b, 1.3rem, 'Ropa Sans' sans-serif, normal, italic);
+        }
+
+        &__rating {
+            color: #edb717;
+            margin-bottom: 1rem;
+
+            i {
+                margin: 0 1rem;
+
+
+            }
+
+        }
+
+    }
+
+    .contact-container {
+        text-align: center;
+        margin-top: 2rem;
+
+        .text-warning {
+            color: #b60000;
+            font-size: 1.2rem;
+
+        }
+
+        pre {
+            background-color: $card-background;
+            padding: 10px;
+            border: 1px #4f3511;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin-top: 10px;
+            @include text-style(#14416b, 1.3rem, 'Ropa Sans' sans-serif, normal, italic);
+
+        }
+
+    }
+
+    #contact-form .btn {
+        @include button-style(#f4cfa0, #4f3511);
+    }
+
+    #dynamic-doctor-list {
+        .cards {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+    }
+
+}

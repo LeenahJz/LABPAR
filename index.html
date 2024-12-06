@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Clínicas St. Patrick</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand_logo" href="#">
+                <img src="images/logo.png" alt="Logo de la página" class="navbar-brand_logo">
+                Red de Clínicas St. Patrick
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="ri-menu-2-fill"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reseñas">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#doctor-team">Equipo Médico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- <button class="btn btn-dark-mode" id="dark-mode-toggle">
+                <i class="bi bi-toggles"></i>
+                Modo oscuro
+            </button> -->
+
+            <button class="btn btn-primary" type="submit">Reservar cita
+            </button>
+        </div>
+    </nav>
+
+    <!----------->
+
+    <main>
+        <section id="home" class="view ">
+            <div class="form-check form-switch cards">
+                <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                <label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
+            </div>
+
+            <h2>Inicio</h2>
+            <div class="row cards">
+                <div class="col cards__item">
+                    <h2 class="cards__title">¿Quiénes somos?</h2>
+                    <p class="cards__description">Red de Clínicas St. Patrick es una institución de salud perteneciente
+                        a la red de salud del SSMC,
+                        donde podrás encontrar diferentes servicios, agendar horas, ver resultados de exámenes, además
+                        de conocer el equipo médico."
+                </div>
+                <div class="col cards__item">
+                    <h2 class="cards__title">Misión</h2>
+                    <p class="cards__description">Somos un establecimiento de salud, perteneciente a la red de salud del
+                        SSMC, centrado en las personas,
+                        con altos estándares de calidad y seguridad en los procesos asistenciales y administrativos,
+                        para lograr una
+                        atención de excelencia, oportuna, digna, confiable, inclusiva y cercana a las personas.</p>
+                </div>
+                <div class="col cards__item">
+                    <h2 class="cards__title">Visión</h2>
+                    <p class="cards__description">Ser una institución de salud líder dentro del sistema público,
+                        referente de una atención segura, de calidad,
+                        oportuna, eficiente y centrada en las personas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="view">
+            <h2>Servicios</h2>
+            <div class="row cards">
+                <div class="col cards__item">
+                    <h2 class="cards__title">Laboratorio</h2>
+                    <img src="images/servicios.jpg" alt="laboratorio" class="cards__image">
+                    <p class="cards__description">En Red de Clínicas St. Patrick contamos con la mejor tecnología para
+                        la realización
+                        de exámenes de laboratorio, siguiendo los más altos estándares de calidad.</p>
+                </div>
+                <div class="col cards__item">
+                    <h2 class="cards__title">Urgencias</h2>
+                    <img src="images/urgencias.jpg" alt="urgencias" class="cards__image">
+                    <p class="cards__description">Contamos con un servicio de urgencias que está disponible
+                        en todo el país las 24 horas del día.</p>
+                </div>
+                <div class="col cards__item">
+                    <h2 class="cards__title">Especialidades</h2>
+                    <img src="images/especialidades.jpg" alt="especialidades" class="cards__image">
+                    <p class="cards__description">Conoce las especialidades que tenemos para cuidar de tu salud:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Ginecología</li>
+                        <li class="list-group-item"> Obstetricia</li>
+                        <li class="list-group-item"> Pediatría</li>
+                        <li class="list-group-item"> Medicina General</li>
+                        <li class="list-group-item"> Traumatología</li>
+                        <li class="list-group-item"> Dermatología</li>
+                        <li class="list-group-item"> Cardiología</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas" class="view">
+            <h2>Reseñas de nuestros clientes</h2>
+            <div class="row cards">
+                <!--Inicio card de reseña-->
+                <div class="col cards__item">
+                    <div class="cards__image-container">
+                        <img src="images/romina.jpg" alt="Foto de romina" class="cards__image">
+                    </div>
+                    <div class="container">
+                        <h3 class="cards__tittle"> Romina, Antofagasta</h3>
+                        <p class="cards__text">"¡Excelente servicio! Todo fue rápido y muy profesional."</p>
+                        <div class="cards__text">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin reseña 1 -->
+
+                <!-- Reseña 2 -->
+                <div class="col cards__item">
+                    <div class="cards__image-container">
+                        <img src="images/juana.jpg" alt="Foto de juana" class="cards__image">
+                    </div>
+                    <div class="container">
+                        <h3 class="cards__tittle"> Jenie, Vallenar</h3>
+                        <p class="cards__text">"Muy recomendado, el equipo fue amable y eficiente."</p>
+                        <div class="cards__text">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="col cards__item">
+                    <div class="cards__image-container">
+                        <img src="images/maria.jpg" alt="Foto de maria" class="cards__image">
+                    </div>
+
+                    <div class="container">
+                        <h3 class="cards__tittle"> Maria, Arica</h3>
+                        <p class="cards__text">"Buen servicio, volveré a contactarlos para más proyectos."</p>
+                        <div class="cards__text">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="doctor-team" class="view ">
+            <h2>Equipo Médico</h2>
+
+
+            <div class="row cards">
+                <div class="col cards__item">
+                    <h2 class="cards__title">Dra. Pamela Margoth Chávez Barrientos. Medicina Interna - Geriatría.
+                    </h2>
+                    <img src="images/doctor1.jpg" alt="doctor1" class="cards__image-container">
+                    <p class="cards__description">Médico Cirujano por la Universidad de Chile (1991). Especialista
+                        en
+                        Medicina interna por la Universidad de Chile (1997). Especialista en Geriatría por la
+                        Pontificia
+                        Universidad Católica de Chile (2005). </p>
+                </div>
+
+                <div class="col cards__item">
+                    <h2 class="cards__title">Dra. María Carolina Salisbury Devincenzi. Cirugía Plástica y General.
+                    </h2>
+                    <img src="images/doctor2.jpg" alt="doctor2" class="cards__image-container">
+                    <p class="cards__description">Médico Cirujano por la Universidad De La República, Uruguay
+                        (2008).
+                        Especialista en Cirugía General por la Pontificia Universidad Católica de Chile (2012).
+                    </p>
+                </div>
+
+                <div class="col cards__item">
+                    <h2 class="cards__title">Dr. Philipp Anwandter Beckhaus. Traumatología y Ortopedia - Mano,
+                        muñeca y
+                        codo. </h2>
+                    <img src="images/doctor3.jpg" alt="doctor3" class="cards__image-container">
+                    <p class="cards__description"> Médico Cirujano por la Pontificia Universidad Católica de Chile
+                        (2005). Especialista en Traumatología y Ortopedia por la Pontificia Universidad Católica de
+                        Chile (2008).
+                        Subespecialidad en Cirugía de Manos y Microcirugía por la Pontificia Universidad Católica de
+                        Chile (2008-2009). </p>
+                </div>
+
+                <div class="col cards__item">
+                    <h2 class="cards__title">Dra. Javiera Pérez Velásquez. Pediatría General. </h2>
+                    <img src="images/doctor5.jpg" alt="doctor5" class="cards__image-container">
+                    <p class="cards__description"> Médico Cirujano por la Universidad de los Andes (2015).
+                        Especialista en Pediatría por la Universidad de los Andes (2019). </p>
+                </div>
+
+                <div class="col cards__item">
+                    <h2 class="cards__title">Dr. Marcelo Sarzosa Enríquez. Odontología - Cirugía Maxilofacial. </h2>
+                    <img src="images/doctor4.jpg" alt="doctor4" class="cards__image-container">
+                    <p class="cards__description"> Cirujano Dentista por la Universidad de Concepción (1995).
+                        Especialista en Cirugía Bucal y Traumatología Bucal y Maxilofacial por la Universidad de
+                        Concepción (1999).</p>
+                </div>
+
+                <div class="col cards__item">
+                    <h2 class="cards__title">Dra. Carmen Icarte Barrientos. Fisiatría Pediátrico y Adulto </h2>
+                    <img src="images/doctor6.jpg" alt="doctor6" class="cards__image-container">
+                    <p class="cards__description"> Médico Cirujano por la Universidad de Concepción (1990).
+                        Especialista en Medicina Física y Rehabilitación por la Universidad de Chile (2001). </p>
+                </div>
+
+            </div>
+            <div id="doctor-list" class="row cards__description">
+            </div>
+
+            <div class="contact-container">
+
+                <h2>Manejo Objetos JSON</h2>
+                <button class="btn btn-primary" onclick="mostrarListaJSON()">Mostrar lista doctores</button>
+                <button class="btn btn-primary" onclick="destructurarJSON()">Mostrar JSON destructurado</button>
+                <button class="btn btn-primary" onclick="clonarJSON()">Mostrar JSON clonado</button>
+                <button class="btn btn-primary" onclick="mergeJSON()">Mostrar JSON merge</button>
+                <button class="btn btn-primary" onclick="stringifyJSON()">Mostrar JSON stringify</button>
+                <button class="btn btn-primary" onclick="recorrerJSON()">Recorrer JSON</button>
+                <pre class="contact-container" id="json-output"></pre>
+            </div>
+            <div class="contact-container">
+                <div class="mb-3">
+                    <button class="btn btn-primary" onclick="mostrarDoctores()">Mostrar doctores</button>
+                    <button id class="btn btn-primary"
+                        onclick="agregarDoctor(prompt('Ingresa un nuevo doctor:'))">Agregar nuevo doctor</button>
+                    <button class="btn btn-primary" onclick="eliminarDoctorPorNombre()">Eliminar último doctor
+                        agregado</button>
+                    <pre id="estructuras-output"> </pre>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" onclick="buscandoDoctor()">Buscar doctor</button>
+                    <button class="btn btn-primary" onclick="ordenarLista()">Ordenar lista</button>
+                    <pre id="algoritmos-output"></pre>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="mb-3">
+                    <button class="btn btn-primary" onclick="calcularCosto()">Mostrar costo total de pacientes y sus consultas</button>
+                    <button class="btn btn-primary" onclick="calcularTiempoEsperaConsultas()">Calcular tiempo promedio espera</button>
+                    <button class="btn btn-primary" onclick="calcularHorasConsultasDoctor()">Calcular horas consultas de doctor</button>
+                    <button class="btn btn-primary" onclick="calcularCostosConDescuentos()">Calcular descuento de 10%, 20% y 30% con precio base $5000</button>
+                    <pre id="funcional-output"> </pre>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="mb-3">
+                    <button class="btn btn-primary" onclick="ejecutarAsyncAwait()">Obtener datos de los doctores</button>
+                    <button class="btn btn-primary" onclick="ejecutarPromesas()">Casos de fallos y éxito</button>
+                    <pre id="eventosPromises-output"> </pre>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="mb-3">
+                    <button class="btn btn-primary" onclick="mostrarDoctores()">Mostrar doctores</button>
+                    <button class="btn btn-primary" onclick="mostrarCirujanos()">Mostrar cirujanos</button>
+                    <button class="btn btn-primary" onclick="mostrarPolimorfismo()">Mostrar polimorfismo</button>
+                    <pre id="eventosOOP-output"> </pre>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="view ">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <img src="images/contacto.jpg" alt="Contacto" class="cards__image-container">
+                <p class="cards__description">Formulario de contacto o información de contacto.</p>
+
+                <div>
+                    <a href="#" class="bi bi-facebook"></a>
+                    <a href="#" class="bi bi-twitter"></a>
+                    <a href="#" class="bi bi-instagram"></a>
+                </div>
+
+                <div class="contact-container">
+                    <button class="btn btn-primary" onclick="agregarCita()">Mostrar citas</button>
+                    <button class="btn btn-primary" onclick="llegadaPaciente()">Mostrar pacientes en espera</button>
+                    <pre id="citas-output"> </pre>
+                </div>
+
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label class="cards__text" for="name">Nombre:</label>
+                        <input class="cards__text form-control" type="text" id="name" name="name"
+                            placeholder="Ingrese su nombre" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="cards__text" for="email">Correo electrónico:</label>
+                        <input class="cards__text form-control" type="email" id="email"
+                            placeholder="Ingrese un correo electrónico válido:" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="cards__text" for="phone">Teléfono:</label>
+                        <input class="cards__text form-control" type="tel" id="phone" name="phone"
+                            placeholder="Ingrese su número de teléfono" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="cards__text form-label" for="subject">Asunto:</label>
+                        <input class="cards__text form-control" type="text" id="subject" name="subject"
+                            placeholder="Ingrese el asunto" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="cards__text form-label" for="message">Mensaje:</label>
+                        <textarea class="cards__text form-control" id="message" name="message" rows="6"
+                            placeholder="Deje su mensaje aquí"></textarea>
+                    </div>
+
+                    <div class="header_button-container">
+
+                        <button class="btn" type="submit" onclick="enviarForm">Enviar</button>
+                        <pre id="eventosAsync-output"></pre>
+
+                    </div>
+
+                </form>
+
+                <div class="cards__title">
+                    <div class="cards__item">
+                        <h2 class="cards__title">Sucursal en Antofagasta</h2>
+                        <p class="cards__description"> Queda ubicado en Simon Bolivar 250, cerca del puerto de
+                            Antofagasta. </p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d646.0973103403059!2d-70.39802147412442!3d-23.644528481531026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96afd53d6d086c49%3A0x13679699f979f0bc!2sAntofagasta!5e0!3m2!1ses-419!2scl!4v1729729067198!5m2!1ses-419!2scl"
+                        width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Red de Clínicas St. Patrick. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="javascript/json.js"></script>
+    <script src="javascript/algoritmos.js"></script>
+    <script src="javascript/estructuras.js"></script>
+    <script src="javascript/funcional.js"></script>
+    <script src="javascript/OOP.js"></script>
+    <script defer src="javascript/eventosAsync.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

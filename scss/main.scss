@@ -1,0 +1,21 @@
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//los archivos creados en scss se juntan acá e invoca a todos los archivos scss en el proyecto
+
+@import "abstracts/mixins";
+@import "base/typography";
+
+@import "abstracts/variables";
+@import "base/reset"; 
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/nav';
+@import 'layout/section';
+
+//componentes 
+@import 'components/button';
+
+

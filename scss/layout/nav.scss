@@ -1,0 +1,117 @@
+//styling in sass
+
+@import '../abstracts/_variables.scss';
+@import '../abstracts/_mixins.scss';
+
+
+.navbar {
+  @include text-style(#14416b, 1.4rem, 'Ropa Sans' sans-serif, bold, italic);
+  background-color: $light-color;
+  padding: 1rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    a {
+      
+      padding: $padding;
+      text-decoration: none;
+      
+      &:hover {
+        color: darken($primary-color, 10%);
+      }
+    }
+    .btn-dark-mode {
+      background-color: $dark-color;
+      color: $light-color;
+  
+      &:hover {
+        background-color: darken($dark-color, 10%);
+      }
+    }
+  }
+
+  &-light {
+    .navbar-nav {
+      .nav-item {
+        @include text-style(#14416b, 1.4rem, 'Ropa Sans' sans-serif, bold, italic);
+      }
+      .nav-link {
+
+        @include text-style(#14416b, 1.4rem, 'Ropa Sans' sans-serif, bold, italic);
+  
+        &:hover {
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  &-dark {
+    .navbar-nav{
+      .nav-link {
+        @include text-style(#14416b, 1.4rem, 'Ropa Sans' sans-serif, bold, italic);
+      }
+    }
+
+  }
+
+  &-brand {
+    @include text-style(#14416b, 2rem, 'Ropa Sans' sans-serif, bold, normal);
+   
+
+    &_logo {
+      @include text-style(#14416b, 2rem, 'Ropa Sans' sans-serif, bold, normal);
+      /* font-style: italic;
+      padding: $padding;
+      font-family: 'Ropa Sans' sans-serif;
+      text-decoration: none; */
+      font-size: 2rem;
+      img {
+        width: 70px;
+        height: 60px;
+        align-items: align-top;
+        display: d-inline-block;
+      }
+
+      &:hover {
+        color: darken(#14416b, 10%);
+      }
+
+    }
+  
+  }
+  
+}
+
+// Button Styles
+.btn {
+
+    @include button-style(#f4d1a1,#624314);
+
+    @media (max-width: $breakpoint-md) {
+        display: block;
+        margin: 10px auto;
+    }
+/* 
+    &:hover {
+        background-color: darken($accent-color, 10%);
+    } */
+  
+
+}
+
+
+
+.navbar-expand-lg {
+  //Display navigation links on larger screens, collapse on smaller screens
+  .navbar-toggler {
+    @include text-style(#14416b, 1.4rem, 'Ropa Sans' sans-serif, bold, italic);
+
+    border-color: $extra-light;
+    background-color: $background-color;
+  }
+}

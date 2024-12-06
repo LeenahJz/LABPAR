@@ -1,0 +1,17 @@
+//typos h2. p
+
+@import '../abstracts/_variables.scss';
+
+h2 {
+    
+    $font-text: 'Ropa Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-family: $font-text;
+    color: $primary-color;
+    font-weight: bold;
+    padding: $padding;
+    margin-bottom: 1.5rem;
+    background-color: $card-background;
+    border-radius: 10px;
+}

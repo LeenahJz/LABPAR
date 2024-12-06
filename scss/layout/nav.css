@@ -1,0 +1,130 @@
+.navbar {
+  color: #14416b;
+  font-size: 1.4rem;
+  font-family: "Ropa Sans" sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-justify: distribute-all-lines;
+  font-style: italic;
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container a {
+  padding: 1rem;
+  text-decoration: none;
+}
+.navbar .container a:hover {
+  color: #0c2740;
+}
+.navbar .container .btn-dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+.navbar .container .btn-dark-mode:hover {
+  background-color: #1d2124;
+}
+.navbar-light .navbar-nav .nav-item {
+  color: #14416b;
+  font-size: 1.4rem;
+  font-family: "Ropa Sans" sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-justify: distribute-all-lines;
+  font-style: italic;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #14416b;
+  font-size: 1.4rem;
+  font-family: "Ropa Sans" sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-justify: distribute-all-lines;
+  font-style: italic;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0c2740;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #14416b;
+  font-size: 1.4rem;
+  font-family: "Ropa Sans" sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-justify: distribute-all-lines;
+  font-style: italic;
+}
+.navbar-brand {
+  color: #14416b;
+  font-size: 2rem;
+  font-family: "Ropa Sans" sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-justify: distribute-all-lines;
+  font-style: normal;
+}
+.navbar-brand_logo {
+  color: #14416b;
+  font-size: 2rem;
+  font-family: "Ropa Sans" sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-justify: distribute-all-lines;
+  font-style: normal;
+  /* font-style: italic;
+  padding: $padding;
+  font-family: 'Ropa Sans' sans-serif;
+  text-decoration: none; */
+  font-size: 2rem;
+}
+.navbar-brand_logo img {
+  width: 70px;
+  height: 60px;
+  align-items: align-top;
+  display: d-inline-block;
+}
+.navbar-brand_logo:hover {
+  color: #0c2740;
+}
+
+.btn {
+  background-color: #f4d1a1;
+  color: #624314;
+  font-size: 1.8rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: "Ropa sans" sans-serif;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* 
+      &:hover {
+          background-color: darken($accent-color, 10%);
+      } */
+}
+.btn:hover {
+  background-color: #211717;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .btn {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+.navbar-expand-lg .navbar-toggler {
+  color: #14416b;
+  font-size: 1.4rem;
+  font-family: "Ropa Sans" sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-justify: distribute-all-lines;
+  font-style: italic;
+  border-color: #c9e5f9;
+  background-color: #8fc3f3;
+}/*# sourceMappingURL=nav.css.map */

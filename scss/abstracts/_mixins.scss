@@ -1,0 +1,40 @@
+//los mixins para utilizar
+
+
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    font-size: 1.8rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: 'Ropa sans' sans-serif;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+   
+    &:hover {
+        background-color: darken(#402b2b, 10%);
+        color: #ffffff;
+
+    }
+}
+
+@mixin text-style($tx-color, $tx-size, $tx-family, $tx-weight, $tx-style) {
+    color: $tx-color;
+    font-size: $tx-size;
+    font-family: $tx-family;
+    font-weight: $tx-weight;
+    padding: 0.5rem;
+    text-justify:distribute-all-lines;
+    font-style: $tx-style;
+}
+
+// Mixins
+@mixin transition($property, $duration: 0.3s, $timing: ease-in-out) {
+    transition: $property $duration $timing;
+  }
+
+
+
+
+

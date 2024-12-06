@@ -1,0 +1,75 @@
+//aplicación de modularización SASS y metodología BEM
+
+@import '../abstracts/_variables.scss';
+
+.header {
+
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+        to right,
+        rgb(88, 133, 210),
+        rgb(88, 133, 210)
+    ),
+    url('../images/bg-medical2.jpg');
+    padding: $padding;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    @media (max-width: $breakpoint-md) {
+        display: block;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* 
+    .header_logo {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $breakpoint-md) {
+            display: block;
+            flex-wrap: wrap;
+            width: 100%;
+          }    
+
+        &-tittle{
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            font-family: $font-text;
+
+            @media (max-width: $breakpoint-md) {
+                display: block;
+                flex-wrap: wrap;
+                width: 100%;
+                font-size: 1.9rem;
+                text-align: center;
+            }
+        }
+
+        img {
+            margin-right: 1rem;
+            height: 70px;
+
+            @media (max-width: $breakpoint-md) {
+                display: block;
+                flex-wrap: nowrap;
+                width: 50px;
+                height: 40px;
+                align-items: center;
+              }
+        
+        }
+
+    }
+    .header_button-container {
+        @include button-style(#f4d1a1,#ffffff);
+
+    }
+ */
+   
+}

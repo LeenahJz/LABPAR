@@ -1,0 +1,58 @@
+//definiciones variables
+
+$primary-color: #14416b;
+$list-color: #BFBBCB;
+$secondary-color: #B1CFEB;
+$background-light: #ebdbcc;
+$background-color:  #8fc3f3;
+$extra-light: #c9e5f9;
+$light-color: #f8f9fa;
+$border-color: #f5f2f2;
+$image-border-color: rgb(114, 85, 71);
+$card-background: #f3e6e3;
+$terciary-color: #e1c5c5ed;
+$dark-color: #343a40;
+$text-color: #212529;
+
+// Variables para colores del header
+//$primary-color: #3498db;
+$text-light: #636363;
+$text-color: #ffffff;
+$accent-color: #e4bdb0;
+$hover-color: #304f68;
+$font-text: 'Ropa Sans', sans-serif;
+$padding: 1rem;
+$margin: 1rem;
+
+//media queries
+
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+
+
+// variables para mixins
+
+$grid-breakpoint: (
+    xs: 0,
+    md: 768px,
+    sm: 576px,
+    lg: 992px,
+    xl: 1200px
+);
+
+$container-wwidth: (
+    xs: 100%,
+    md: 75%,
+    sm: 90%,
+    lg: 80%,
+    xl: 70%
+);
+
+@mixin card($color) {
+    background-color: $color;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
